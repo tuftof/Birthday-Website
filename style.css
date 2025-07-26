@@ -193,10 +193,13 @@ span
     position: absolute;
     pointer-events: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
     filter: drop-shadow(0 0 15px rgba(0,0,0,0.5));
 =======
     
 >>>>>>> bde6731 (third commit)
+=======
+>>>>>>> 7be4e5f (third commit)
     animation: fadeInOut 1s linear infinite;
 }
 @keyframes fadeInOut
