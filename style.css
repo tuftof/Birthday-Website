@@ -12,25 +12,77 @@ body{
 }  
 #letterh2{
     font-family: 'Chicle';
-    color: #CDA9A9;
+    color: #956f6f;
     font-size: 2em;
     margin-left: 10px;
 }
-#div2{
-    
+#wrapper2{
     visibility: hidden;
+    height: 40rem;
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    padding: 10px;
+
+}
+#bodyLetter{
+    width: 30rem;
+    height: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    visibility: hidden;
+}
+#letterContent{
+
+}
+#firsthalf{
     background-color: #F4F3EE;
-    width: 700px;
-    height: 500px;
+    width: 30rem;
+    height: 20rem;
     border: 5px solid #956f6f;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -48%) rotateX(180deg);
     padding: 10px;
     opacity: 1;
+    animation-name: open;
+    animation-duration: 2s;
+    transition: transform 2s ease-in-out;
+    text-align: center;
+    border-bottom-width: 0px;
 }
+#forYou{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateX(180deg);
+   
+}
+    
+#secondhalf{
+    background-color: #F4F3EE;
+    width: 30rem;
+    height: 20rem;
+    border: 5px solid #956f6f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    padding: 10px;
+    opacity: 1 ;
+    z-index: -1;
+    transition: transform 2s ease-in-out;
+
+}
+
 #div1{
+
     background-color: #F4F3EE;
     width: 400px;
     height: 300px;
@@ -68,6 +120,13 @@ p{
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: -10px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+#closing{
+    text-align: end;
+    margin-top: 40px;
+    
 }
 #lineheart{
     height: 8rem;
@@ -89,15 +148,16 @@ p{
 }   
 #bia{
     margin-right: 20px;
-}
-#imgContainer{
-    position: relative;
+    box-shadow: 2px 2px 10px #CDA9A9;
+    margin-top: 40px;
     float: right;
+    margin-bottom: 10px;
 }
+
 #rectangle{
     position: absolute;
-    width: 250px;
-    height: 300px;
+    width: 140rem;
+    height: 150px;
     background-color: #CDA9A9;
     z-index: -1;
     transform: translateX(10px) translateY(10px);
