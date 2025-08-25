@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
     <script src="code.js"></script>
+    
+
 </head>
 <body>
 
-  
 
+     <audio autoplay  id="audio" volume="0.5">
+       <source src="iceCream.mp3" type="audio/mpeg">
+     </audio>
     <div id="shadow">
         
     </div>
@@ -29,25 +33,47 @@
     
 
    <div id="bodyLetter">
-        <div id="letterContent">
-             <img src="biaa.jpg" width="140rem" height="160rem" id="bia"> 
-             <h2 id="letterh2">To: Bea</h2>
+        <div id="letterContent"> 
+             <p id="letterh2">To: Bea</p>
              
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Maiores officiis ullam, nemo laudantium culpa corporis possimus ratione excepturi? 
-                    Omnis quasi enim officia voluptatum blanditiis dolores, nobis ullam veniam ut placeat!</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Maiores officiis ullam, nemo laudantium culpa corporis possimus ratione excepturi? 
-                    Omnis quasi enim officia voluptatum blanditiis dolores, nobis ullam veniam ut placeat!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Maiores officiis ullam, nemo laudantium culpa corporis possimus ratione excepturi? 
-                    Omnis quasi enim officia voluptatum blanditiis dolores, nobis ullam veniam ut placeat!</p>
-                <p id="closing">Sincerely,<br>
+                <p class="myLetter">
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Commodi soluta, magnam fuga pariatur itaque libero alias nostrum cupiditate 
+                    id molestiae porro aliquid, totam distinctio ullam obcaecati nemo consequuntur doloribus saepe.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam rerum, perspiciatis possimus 
+                    nesciunt sapiente asperiores distinctio quas iure dolores quo voluptates dignissimos accusamus 
+                    qui nulla nobis eos. Error, exercitationem?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam rerum, perspiciatis possimus 
+                    nesciunt sapiente asperiores distinctio quas iure dolores quo voluptates dignissimos accusamus 
+                    qui nulla nobis eos. Error, exercitationem?
+
+                    <!-- Happy birthday, Bea! I just want to say that your existence brings so much joy to my life.
+                    I never expected that I will be able to meet someone so pretty, caring, and understanding like you.
+                    Each day becomes brighter and more exciting when I'm with you.  <br><br>
+
+                    I am grateful that you were born, because of you, I found my purpose and happiness.
+                    Also, I'm sorry if sometimes I'm too clingy, and too annoying. I just want you to know that I really 
+                    care about you. <br><br>
+
+                    Please know that I really like you and I care for you a lot. I hope that we can make more memories together.
+                    Once again, happy birthday, Bea! I want you to be happy not just today, but every day of your life. -->
+                </p>
+            
+                <p class="myLetter" id="closing">Sincerely,<br>
                     Your Suitor
                 </p>
-            <h2 id="Next" onclick="homepage()">Next</h2>
+
+            
                 
         </div>
+        <div id="nextDiv" onclick="homepage()">
+            <img src="scroll.png"  id="scroll">
+            <p id="Next" >Next</p>
+        </div>
+        
 
     </div>
         
@@ -68,33 +94,134 @@
         <button id="readLetter" onclick="readLetter()">Read the letter</button>
     </div>
 
-    <div id="dashboard">
-        <img src="Happy Birthday Cake GIFs _ Tenor.gif" width="100rem" height="auto" id="happybday">
-        <div id="panelholder">
-            <div class="panels">
-            <img src="letter.png" width="80rem" height="80rem">
-            <h2 class="dashH2">Letter</h2>
-        </div>
-        <div class="panels">
-            <img src="memoriesIcon.png" width="80rem" height="80rem">
-            <h2 class="dashH2">Memories</h2>
-        </div>
-        <div class="panels">
-            <img src="game.png" width="80rem" height="50rem" style="margin-top: 20px;">
-            <h2 class="dashH2" style="margin-top: 26px;">Game</h2>
-        </div>
-        </div>
-    </div>
-
-
     
-  <div class="wrapper">
-        <div class="heart x1"></div>
-        <div class="heart x2"></div>
-        <div class="heart x3"></div>
-        <div class="heart x4"></div>
-        <div class="heart x5"> </div>
-        <div class="altheart x6"></div>
+
+    <div id="gallery">
+        
+        <div id="backDesign">
+            <img src="pictures/corners.png" width="150px" height="80px" id="left_UPcorners">
+            <img src="pictures/corners.png" width="150px" height="80px" id="right_UPcorners">
+            <img src="pictures/corners.png" width="150px" height="80px" id="left_DOWNcorners">
+            <img src="pictures/corners.png" width="150px" height="80px" id="right_DOWNcorners">
+        </div>
+
+
+        <div id="border">
+            <img src="pictures/vines.png" width="200px" height="200px" id="topLeft_vines">
+            <img src="pictures/vines.png" width="200px" height="200px" id="topRight_vines">
+            <img src="pictures/vines.png" width="200px" height="200px" id="bottomLeft_vines">
+            <img src="pictures/vines.png" width="200px" height="200px" id="bottomRight_vines">
+
+            <img src="pictures/sundrop3.png" width="80px" height="auto" id="sundrop1">
+            <img src="pictures/sundrop3.png" width="80px" height="auto" id="sundrop2">
+            <img src="pictures/sundrop3.png" width="80px" height="auto" id="sundrop3">
+            <img src="pictures/sundrop3.png" width="80px" height="auto" id="sundrop4">
+        </div>
+        
+            <img src="pictures/moon.png" width="200px" height="200px" id="moon">
+            
+            <div id="caption">
+                <img src="pictures/caption.png" width="290px" height="210px" >
+                <p class="caption_text"> "I just wanna be with you every single day,
+                                          For the rest of our lives" <br>- The Ridleys</p>
+                <div id="chibi">
+                    <img src="pictures/chibi_peace.png" width="80px" height="80px">
+                </div>  
+            </div>
+            
+            <img src="pictures/flower.png" width="50px" height="auto" id="flower">
+            
+            <img src="pictures/fav_person.png" width="120px" height="60px" id="favperson">
+            <img src="pictures/colored_flower.png" width="150px" height="180px" id="coloredflower">
+            <img src="pictures/bearr.png" width="140px" height="auto" id="bear">
+            <img src="pictures/top.png" width="200px" height="auto" id="topper">
+            <img src="pictures/butterfly.png" width="80px" height="auto" id="butterfly">
+
+            <img src="pictures/mizi.png" width="60px" height="auto" id="mizi">
+            <img src="pictures/sua.png" width="70px" height="auto" id="sua">
+
+            <div id="backLetter" onclick="readLetter()" >
+                <img src="scroll.png"  id="scrollGallery">
+                <p id="LetterBack">Back</p>
+            </div>
     </div>
+    
+    <div id="board_content">
+
+        <div id="left_polaroid">
+            <div class="polaroid" id="pic1">
+                    <img src="pictures/firstpic.png" width="150px" height="180px" alt="firstpic">
+                    <img src="pictures/red_pin.png"id="pin">
+            </div>
+
+            <div class="polaroid" id="pic2">
+                    <img src="pictures/cute.png" width="150px" height="180px" alt="secondpic">
+                    <img src="pictures/red_pin.png"id="pin">
+            </div>
+
+            <div class="polaroid" id="pic3">
+                    <img src="pictures/coffee.png" width="150px" height="180px" alt="thirdpic">
+                    <img src="pictures/red_pin.png" id="pin">
+            </div>
+            <div class="polaroid" id="pic7">
+                    <img src="pictures/recog.png" width="150px" height="180px" alt="thirdpic">
+                    <img src="pictures/red_pin.png" id="pin">
+            </div>
+            <div class="polaroid" id="pic9">
+                    <img src="pictures/smiley.png" width="150px" height="180px" alt="thirdpic">
+                    <img src="pictures/red_pin.png" id="pin">
+            </div>
+
+        </div>
+
+        <div id="right_polaroid">
+            <div id="pic10">            
+                    <img src="pictures/poganda.png" width="150px" height="180px" alt="secondpic">
+                    <img src="pictures/red_pin.png"id="pin">
+            </div> 
+            <div id="pic8">            
+                    <img src="pictures/favv.png" width="150px" height="180px" alt="secondpic">
+                    <img src="pictures/red_pin.png"id="pin">
+            </div>  
+            <div id="pic4">            
+                    <img src="pictures/headset.png" width="150px" height="180px" alt="secondpic">
+                    <img src="pictures/red_pin.png"id="pin">
+            </div>                  
+            <div id="pic5">
+                    <img src="pictures/firstdate.png"  width="150px" height="180px" alt="secondpic">
+                    <img src="pictures/red_pin.png"  id="pin">
+            </div>
+            <div id="pic6">
+                    <img src="pictures/rob.png" width="150px" height="180px" alt="secondpic">
+                    <img src="pictures/red_pin.png" id="pin">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+<!-- Remember to also copy the code in the CSS area! -->
+<div class="snowflakes">
+  <!-- add your 'snowflake' images below - you can add more or less if needed -->
+  <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+  <div class="snowflake"><img src="sua-chibi.png" style="width:70px;" /></div>
+    <div class="snowflake"><img src="sua-chibi.png" style="width:70px;" /></div>
+    <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+   <div class="snowflake"><img src="sua-chibi.png" style="width:70px;" /></div>
+  <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+    <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+    <div class="snowflake"><img src="sua-chibi.png" style="width:70px;" /></div>
+    <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+  <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+    <div class="snowflake"><img src="sua-chibi.png" style="width:70px;" /></div>
+    <div class="snowflake"><img src="mizi_sua.png" style="width:120px;" /></div>
+</div>
+</div>
