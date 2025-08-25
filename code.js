@@ -1,6 +1,9 @@
 
 
 function letter(){
+    const audio = document.getElementById("audio");
+    audio.play();
+
     const box2 = document.getElementById("letterdiv");
     const box1 = document.getElementById("div1");
 
